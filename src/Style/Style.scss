@@ -1,7 +1,7 @@
 .cti{
-    width: 65%;
-    border: 1px solid red;
+    width: 60%;
     padding: 10px;
+    height: fit-content;
     >div{
         width: fit-content;
         border: 1px solid rgba(128, 128, 128, 0.479);
@@ -43,7 +43,6 @@
 
 #result{
     width: 25%;
-    border: 1px solid blue;
     margin-top: 50px;
     visibility: visible;
     transition: 0.4s;
@@ -51,6 +50,17 @@
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
+    >div{
+        border: 1px solid rgba(128, 128, 128, 0.212);
+        >figure{
+            width: 100px;
+            height: 100px;
+            >img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 }
 .none{
     transition: 0.4s;
@@ -61,8 +71,13 @@
     opacity: 0;
     visibility: hidden !important;
 }
+.size{
+    position: fixed;
+    top: 5px;
+    right: 110px;
+}
 .total{
     position: fixed;
     top: 5px;
-    right: 240px;
+    right: 290px;
 }

@@ -43,11 +43,12 @@ function Items({index,para}) {
 
 
   return (
-    <div className='border'>
-        <p>{data[index].name}</p>
-        <p>{data[index].price}</p>
-        <p>{data[index].count}</p>
-        <p>{data[index].selfTotal}</p>
+    <div className='p-2'>
+      <figure><img src={data[index].src} alt="" /></figure>
+        <p>name: {data[index].name}</p>
+        <p>price: {data[index].price}</p>
+        <p>quantity: {data[index].count}</p>
+        <p>self total: {data[index].selfTotal}</p>
         <button className='btn btn-success' onClick={()=>QuantityHandler(+1)}>+</button>
         <button className='btn btn-danger mx-1' onClick={()=>QuantityHandler(-1)}>-</button>
         <button className='btn btn-secondary' onClick={RemoveHandler}>&#10005;</button>
